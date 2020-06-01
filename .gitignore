@@ -2,3 +2,4 @@ venv
 .idea
 zoo*
 kafka*
+config.py

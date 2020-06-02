@@ -1,1 +1,1 @@
-# kafka-kakao-bot
+# kafka-study

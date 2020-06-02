@@ -32,3 +32,13 @@ services:
       - ./kafka1/data:/vavr/lib/kafka/data
     depends_on:
       - zoo1
+
+  kafka-manager:
+    image: sheepkiller/kafka-manager:latest
+    ports:
+      - "9000:9000"
+    links:
+      - zoo1
+      - kafka1
+    environment:
+      ZK_HOSTS: zoo1:2181
